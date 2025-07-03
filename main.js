@@ -15,3 +15,4 @@ client.once(Events.ClientReady, readyClient => {
 });
 
 client.login(token);
+#evillarryschildwashere
