@@ -1,9 +1,28 @@
-const fs = require('fs');
+const fs = require('node:fs');
+const path = require('node:path');
+const { Client, Collection, Events, GatewayIntentBits, MessageFlags } = require('discord.js');
+
 require('dotenv').config()
-const { Client, Events, GatewayIntentBits } = require('discord.js');
 const token = process.env.TOKEN
 console.log("preparing...")
+
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+
+client.commands = new Collection();
+
+const foldersPath = path.join(__dirname, 'commands');
+
+const commandFiles = fs.readdirSync(foldersPath).filter(file => file.endsWith('.js'));
+for (const file of commandFiles) {
+	const filePath = path.join(foldersPath, file);
+	const command = require(filePath);
+	// Set a new item in the Collection with the key as the command name and the value as the exported module
+	if ('data' in command && 'execute' in command) {
+		client.commands.set(command.data.name, command);
+	} else {
+		console.log(`[WARNING] The command at ${filePath} is missing a required "data" or "execute" property.`);
+	}
+}
 
 if (typeof token == 'undefined') {
   console.log("Your Token is missing inside of .env\nplease copy .env_example and imput your token from the developer portal.");
