@@ -7,7 +7,7 @@ const commands = [];
 // Grab the command folder
 const foldersPath = path.join(__dirname, 'commands');
 // Grab all the command files from the commands directory
-const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
+const commandFiles = fs.readdirSync(foldersPath).filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
 	const filePath = path.join(foldersPath, file);
