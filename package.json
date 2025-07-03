@@ -1,0 +1,11 @@
+{
+  "name": "larry-bot",
+  "version": "0.0.0",
+  "description": "Larry bot",
+  "main": "main.js",
+  "scripts": {
+    "test": "main.js"
+  },
+  "author": "Mari",
+  "license": "MIT"
+}
