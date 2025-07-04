@@ -7,7 +7,7 @@ module.exports = {
 		.setDescription('outputs server dats'),
 	async execute(interaction) {
         createFileIfNotExists(`./data/${interaction.guild.id}.json`, '{}');
-        const data = JSON.parse(fs.readFileSync(`./data/${interaction.guild.id}.json`, 'utf8'));
+        const data = JSON.parse(await fs.readFile(`./data/${interaction.guild.id}.json`, 'utf8'));
 		await interaction.reply(`done.`);
 	},
 };
