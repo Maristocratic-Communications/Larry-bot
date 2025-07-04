@@ -1,3 +1,5 @@
 {
-	"Normal Larry": { "emoji": "<:Staring_Larry:1371028509807607908>", "weight": 220 }
+	"Normal Larry": { "emoji": "<:Staring_Larry:1371028509807607908>", "weight": 220 },
+	"Garry": { "emoji": "<:Staring_Larry:1371028509807607908>", "weight": 162 },
+	"Watermelon Larry": { "emoji": "<:Staring_Larry:1371028509807607908>", "weight": 100 }
 }
