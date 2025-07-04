@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('discord.js');
-const fs = require('fs');
+const fs = require('fs').promises;
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -12,7 +12,7 @@ module.exports = {
 	},
 };
 
-async function createFileIfNotExists(path, content = '') {
+async function createFileIfNotExists(path, content) {
   try {
     await fs.access(path);
   } catch {
