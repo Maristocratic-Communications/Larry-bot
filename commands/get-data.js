@@ -6,7 +6,7 @@ module.exports = {
 		.setName('get-data')
 		.setDescription('outputs server dats'),
 	async execute(interaction) {
-        const data = JSON.parse(fs.readFileSync(`./data/{interaction.guild.id}.json`, 'utf8'));
+        const data = JSON.parse(fs.readFileSync(`./data/${interaction.guild.id}.json`, 'utf8'));
 		await interaction.reply(`done.`);
 	},
 };
