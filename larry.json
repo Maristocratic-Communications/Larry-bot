@@ -1,5 +1,6 @@
 {
-	"Normal Larry": { "emoji": "<:Staring_Larry:1371028509807607908>", "weight": 220 },
-	"Garry": { "emoji": "<:Staring_Larry:1371028509807607908>", "weight": 162 },
-	"Watermelon Larry": { "emoji": "<:Staring_Larry:1371028509807607908>", "weight": 100 }
+	"Normal Larry": { "emoji": "<:larry:1390491588282679539>", "weight": 220 },
+	"Garry": { "emoji": "<:larry:1390491588282679539>", "weight": 162 },
+	"Watermelon Larry": { "emoji": "<:watermelon_larry:1390491134576558234>", "weight": 100 },
+    "Da Hood Larry": { "emoji": "<:da_hood_larry:1390492107864801392>", "weight": 85}
 }
