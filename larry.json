@@ -1,6 +1,7 @@
 {
-	"Normal Larry": { "emoji": "<:larry:1390491588282679539>", "weight": 220 },
-	"Garry": { "emoji": "<:larry:1390491588282679539>", "weight": 162 },
-	"Watermelon Larry": { "emoji": "<:watermelon_larry:1390491134576558234>", "weight": 100 },
-    "Da Hood Larry": { "emoji": "<:da_hood_larry:1390492107864801392>", "weight": 85}
+	"Normal Larry": { "emoji": "<:larry:1390491588282679539>", "weight": 220, "icon_url": "https://media.discordapp.net/attachments/1290044430350422059/1390530937380536350/larry.png"},
+	"Garry": { "emoji": "<:garry:1390531302779781232>", "weight": 162, "icon_url":  "https://media.discordapp.net/attachments/1290044430350422059/1390531125671100537/garry.png"},
+	"Watermelon Larry": { "emoji": "<:watermelon_larry:1390491134576558234>", "weight": 100, "icon_url":  "https://media.discordapp.net/attachments/1290044430350422059/1390530937661685780/watermelon_larry.jpeg"},
+    "Da Hood Larry": { "emoji": "<:da_hood_larry:1390492107864801392>", "weight": 85, "icon_url": "https://media.discordapp.net/attachments/1290044430350422059/1390530936675897524/da_hood_larry.png"},
+    "Dumb Larry": { "emoji": "<:dumb_larry:1390530275452391424>", "weight": 63, "icon_url": "https://media.discordapp.net/attachments/1290044430350422059/1390530937141596171/dumblarry.webp"}
 }

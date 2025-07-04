@@ -9,7 +9,7 @@ module.exports = {
 		.setDescription('larry.'),
 	async execute(interaction) {
         const key = randomLarry()
-		await interaction.reply(`${data[key].emoji} ${key} has... NOT spawned.`);
+		await interaction.reply(`${data[key].emoji} ${key} has... NOT spawned[.](${data[key].icon_url})`);
 	},
 };
 
